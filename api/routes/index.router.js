@@ -7,4 +7,13 @@ router.get('/', (req, res, next) => {
     });
 });
 
+// Signup route
+router.post('/signup', (req, res, next) => {
+    
+})
+
+// Login route
+
+router.post('/')
+
 module.exports = router;

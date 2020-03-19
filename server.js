@@ -35,9 +35,11 @@ mongoose.connection.once('open', () => {
 
 // Initialize API routes
 const indexRouter = require('./api/routes/index.router');
+const userRouter = require('./api/routes/user.router');
 
 // Use API routes
 app.use('/', indexRouter);
+app.use('/user', userRouter);
 
 // Start up server
 app.listen(PORT, () => {

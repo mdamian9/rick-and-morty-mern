@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import axios from 'axios';
 
 class SignupForm extends Component {
 
@@ -14,7 +15,9 @@ class SignupForm extends Component {
     handleFormSubmit = event => {
         event.preventDefault();
 
-        console.log(this.state);
+        axios.post('/signup', this.state).then(res => {
+            console.log(res.data.message);
+        });
 
         // Clear form fields
         event.target.reset();
@@ -28,7 +31,7 @@ class SignupForm extends Component {
 
     render = () => {
         return (
-            <Form>
+            <Form onSubmit={this.handleFormSubmit}>
                 <FormGroup>
                     <Label for='signup-email'>Email:</Label>
                     <Input type='email' name='email' id='signup-email'

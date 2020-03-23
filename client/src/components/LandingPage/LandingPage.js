@@ -1,6 +1,7 @@
 import React from 'react';
 import LandingNavbar from '../LandingNavbar/LandingNavbar';
 import { Container, Row, Col, Button } from 'reactstrap';
+import SignupModal from '../SignupModal/SignupModal';
 
 const LandingPage = () => {
     return (
@@ -12,9 +13,7 @@ const LandingPage = () => {
                     <Row>
                         <Col className='text-center'>
                             <h4>Play a quick game below or create an account to keep track of your scores!</h4>
-                            <Button>
-                                Create account
-                            </Button>
+                            <SignupModal />
                         </Col>
                     </Row>
                     <Row>

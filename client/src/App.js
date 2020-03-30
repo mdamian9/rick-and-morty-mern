@@ -1,13 +1,14 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react';
 import LandingPage from './components/LandingPage/LandingPage';
 
-const App = () => {
-  return(
-    <div>
-      <LandingPage />
-    </div>
-  )
-}
+class App extends Component {
+  render = () => {
+    return (
+      <div>
+        <LandingPage history={this.props.history} />
+      </div>
+    );
+  };
+};
 
 export default App;

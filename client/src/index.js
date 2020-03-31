@@ -7,12 +7,14 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import SignupPage from './components/SignupPage/SignupPage';
 import LoginPage from './components/LoginPage/LoginPage';
+import HomePage from './components/HomePage/HomePage';
 
 ReactDOM.render(
     <Router>
         <Route exact path='/' component={App} />
         <Route exact path='/signup' component={SignupPage} />
-        <Route exact path='login' component={LoginPage} />
+        <Route exact path='/login' component={LoginPage} />
+        <Route exact path='/home' component={HomePage} />
     </Router>,
     document.getElementById('root')
 );

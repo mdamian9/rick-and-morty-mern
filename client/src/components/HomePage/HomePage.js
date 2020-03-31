@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Col, Row } from 'reactstrap';
 import AuthService from '../AuthService/AuthService';
 import withAuth from '../withAuth/withAuth';
+import UserNavbar from '../UserNavbar/UserNavbar';
 
 const Auth = new AuthService();
 
@@ -15,12 +16,16 @@ class HomePage extends Component {
     render = () => {
         return (
             <div>
+                <UserNavbar handleLogout={this.handleLogout} />
+                <br />
+                <div>
 
+                </div>
             </div>
         );
     };
 
 };
 
-export default withAuth(HomePage);
+export default HomePage;
 

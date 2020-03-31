@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
+import LogoNavbar from '../LogoNavbar/LogoNavbar';
 import SignupForm from '../SignupForm/SignupForm';
 import AuthService from '../AuthService/AuthService';
 
@@ -20,6 +21,7 @@ class SignupPage extends Component {
     render = () => {
         return (
             <div>
+                <LogoNavbar />
                 <div className="d-flex align-items-center text-white full-r-div">
                     <div className="mx-auto" style={{ width: '30%' }}>
                         <Container style={{ width: '100%' }}>

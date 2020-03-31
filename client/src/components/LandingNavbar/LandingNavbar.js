@@ -29,8 +29,8 @@ class LandingNavbar extends Component {
     render = () => {
         return (
             <Navbar color='light' light expand='md'>
-                <NavbarBrand href='/'>
-                    <Logo />
+                <NavbarBrand href='/' className='d-flex align-items-center'>
+                    <Logo width='30px' height='30px' />&ensp;<b>Click and Morty!</b>
                 </NavbarBrand>
                 <Nav className='ml-auto' navbar>
                     <Form inline id="login-form" onSubmit={this.handleFormSubmit}>

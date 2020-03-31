@@ -1,11 +1,8 @@
 import React from 'react';
 
-const Logo = () => {
+const Logo = ({ width, height }) => {
     return (
-        <div style={{ display: 'flex' }}>
-            <img src='assets/images/rm_01.jpg' alt='logo' width='30px' height='30px' />
-            <div><b>&ensp;Rick and Morty Clicking Game!</b></div>
-        </div>
+        <img src='assets/images/rm_01.jpg' alt='logo' width={width} height={height} />
     );
 };
 

@@ -15,9 +15,11 @@ class SignupForm extends Component {
     handleFormSubmit = event => {
         event.preventDefault();
 
-        axios.post('/signup', this.state).then(res => {
-            console.log(res.data.message);
-        });
+        // axios.post('/signup', this.state).then(res => {
+        //     console.log(res.data.message);
+        // });
+
+        console.log(this.state);
 
         // Clear form fields
         event.target.reset();

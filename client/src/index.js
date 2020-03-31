@@ -5,10 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import SignupPage from './components/SignupPage/SignupPage';
 
 ReactDOM.render(
     <Router>
         <Route exact path='/' component={App} />
+        <Route exact path='/signup' component={SignupPage} />
     </Router>,
     document.getElementById('root')
 );
